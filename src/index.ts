@@ -14,3 +14,11 @@ app.use(cors({
   app.use(compression());
   app.use(cookieParser());
   app.use(bodyParser.json());
+
+
+  const server = http.createServer(app);
+
+
+  server.listen(8080, ()=>{
+    console.log("Server Running")
+  })
