@@ -11,9 +11,10 @@ app.use(cors({
     credentials: true,
   }));
   
+  
   app.use(compression());
- app.use(bodyParser.json());
   app.use(cookieParser());
+  app.use(bodyParser.json());
  
 
 
